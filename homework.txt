@@ -1,0 +1,18 @@
+CREATE TABLE testTable
+(
+    id INT NOT NULL PRIMARY KEY,
+    first_name VARCHAR(50) NOT  NULL,
+    last_name VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    gender VARCHAR(20) NOT NULL,
+    date_of_birth DATE NOT NULL
+);
+INSERT INTO testTable(id, first_name, last_name, age , gender, date_of_birth)
+VALUES (1,'Arlen','Kasymbaev',17,'Male','2004-06-11','arlen@gmail.com'),
+       (2,'Ruslan','Ruslanov', 22,'Male','1999-04-23','ruslan@gmail.com'),
+       (3, 'Ainazik','Kabylzhanova',20,'Female','2002-12-13','ainazik@gmail.com'),
+       (4, 'Ainazik','Kabylzhanova',20,'Female','2002-12-13','ainazik@gmail.com'),
+       (5, 'Ainazik','Kabylzhanova',20,'Female','2002-12-13','ainazik@gmail.com'),
+       (6, 'Ainazik','Kabylzhanova',20,'Female','2002-12-13','ainazik@gmail.com'),
+       (7, 'Ainazik','Kabylzhanova',20,'Female','2002-12-13','ainazik@gmail.com');
+SELECT * FROM testTable;
